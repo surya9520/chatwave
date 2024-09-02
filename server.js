@@ -10,7 +10,7 @@ const app = express();
 // Connect to the database
 connectDB();
 app.use(cors({
-origin: 'https://chatwave-beta.vercel.app/',
+origin: 'https://chatwave-beta.vercel.app',
 methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
 credentials: true,
 })); 
