@@ -20,6 +20,9 @@ app.use(express.json());
 app.get('/', (req, res) => { 
     res.json({ message: 'Hello, JSON' });
   });
+  app.get('/surya', (req, res) => { 
+    res.json({ message: 'Hello, surya' });
+  });
 
 // Mount routes
 app.use('/auth', authRoutes);
