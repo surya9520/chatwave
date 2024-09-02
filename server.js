@@ -22,8 +22,8 @@ app.get('/', (req, res) => {
   });
 
 // Mount routes
-app.use('/api/auth', authRoutes);
-app.use('/api/auth/google', googleAuthRoutes);
+app.use('/auth', authRoutes);
+app.use('/auth/google', googleAuthRoutes);
 
 app.listen(5000, () => {
 console.log('Server running on port 5000');
