@@ -10,7 +10,7 @@ const app = express();
 // Connect to the database
 connectDB();
 app.use(cors({
-origin: 'http://localhost:3000',
+origin: 'https://chatwave-ysq7.onrender.com/',
 methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
 credentials: true,
 })); 
