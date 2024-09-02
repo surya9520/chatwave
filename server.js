@@ -12,7 +12,7 @@ connectDB();
 
 // Use CORS
 app.use(cors({
-    origin: 'https://chatopen-jaxj.vercel.app'  // Allow your frontend's origin
+    origin: 'https://chatopen-jaxj.vercel.app'  
 }));
 
 app.use(express.json());
