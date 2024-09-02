@@ -1,6 +1,6 @@
 require('dotenv').config();
 const express = require('express');
-// const cors = require('cors');
+const cors = require('cors');
 const connectDB = require('./config/db');
 const authRoutes = require('./routes/authRoutes');
 const googleAuthRoutes = require('./routes/googleauth');
@@ -9,11 +9,11 @@ const app = express();
 
 // Connect to the database
 connectDB();
-// app.use(cors({
-// origin: '*',
-// methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-// credentials: true,
-// })); 
+app.use(cors({
+origin: '*',
+methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
+credentials: true,
+})); 
 
 app.use(express.json());
 
